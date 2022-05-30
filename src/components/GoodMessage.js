@@ -7,7 +7,7 @@ const GoodMessages = () => {
       .then((response) => response.json())
       .then((data) => setGoodMessages(data))
       .catch(console.error);
-  }, [goodMessages]);
+  }, []);
 
   return (
     <>
