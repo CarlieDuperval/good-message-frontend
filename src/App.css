@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+/* 
+.button1 {
+  transition-duration: 0.4s;
+  width: 250px;
+}
+
+.button1:hover {
+  background-color: #4CAF50; 
+  color: white;
+ }  */
+

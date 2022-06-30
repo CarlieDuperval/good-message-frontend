@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import '../../src/style.css'
 
 const GoodMessages = () => {
   const [goodMessages, setGoodMessages] = useState("");
@@ -16,7 +17,7 @@ const GoodMessages = () => {
         <h2>Loading...</h2>
       ) : (
         <>
-          <h2>Good Messages</h2>
+          <h2 className="Good" >Good Messages</h2>
           {goodMessages.map((goodMessage) => {
             return (
               <p key={goodMessage.id}>

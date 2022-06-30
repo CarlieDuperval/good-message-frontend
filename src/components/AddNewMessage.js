@@ -1,5 +1,7 @@
 import { ReactDOM } from "react";
 import { useState } from "react";
+import '../../src/style.css'
+
 
 const AddGoodMessage = () => {
 
@@ -14,7 +16,7 @@ const AddGoodMessage = () => {
                 "Content-type": "application/json; charset=UTF-8"
             }
         })
-        // When
+        // Empty string is 
         .then(() => setMessage(""))
         .catch(console.error);
         
@@ -22,12 +24,13 @@ const AddGoodMessage = () => {
 
     return (
     <form>
-        <input type="text" 
+        <input className="message" type="text"
         value={ message } 
+        placeholder="Good message here"
         onChange={(e) => 
         setMessage(e.target.value)} 
         />
-        <button type="button" onClick={()=> handleSubmit() }> Add Message </button>    
+        <button className="button1" type="button" onClick={()=> handleSubmit() }> Add Message </button>    
     </form>
     )
 }
