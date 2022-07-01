@@ -30,7 +30,9 @@ const AddGoodMessage = () => {
         onChange={(e) => 
         setMessage(e.target.value)} 
         />
+        <span  >
         <button className="button1" type="button" onClick={()=> handleSubmit() }> Add Message </button>    
+        </span>
     </form>
     )
 }
