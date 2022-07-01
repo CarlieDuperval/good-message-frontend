@@ -12,7 +12,7 @@ const GoodMessages = () => {
 
   return (
     <>
-      <h1>Leave A Positive Message 🌞</h1>
+      <h1 className="header">Leave A Positive Message 🌞</h1>
       {!goodMessages ? (
         <h2>Loading...</h2>
       ) : (
